@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   prepare: async (pluginConfig, context) => {
     const { nextRelease, commits } = context;
-    const changelogFile = pluginConfig.changelogFile || 'CHANGELOG.md';
+    const changelogFile = pluginConfig.changelogFile || 'external-changelog.md';
 
     const changelogText = `# Public Changelog\n\n## ${nextRelease.version}\n\n${commits
       .map((c) => `- ${c.subject}`)
@@ -13,6 +13,6 @@ module.exports = {
 
     fs.writeFileSync(path.resolve(process.cwd(), changelogFile), changelogText);
 
-    context.logger.log(`✅ Generated public changelog at ${changelogFile}`);
+    context.logger.log(`✅ Generated external changelog at ${changelogFile}`);
   },
 };

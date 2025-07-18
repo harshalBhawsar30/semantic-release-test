@@ -7,23 +7,27 @@ module.exports = {
     [
       '@semantic-release/changelog',
       {
-        changelogFile: 'CHANGELOG_INTERNAL.md',
+        changelogFile: 'CHANGELOG.md', // Keep appending internal changelog
       },
     ],
     [
       './scripts/external-changelog-generator.js',
       {
-        changelogFile: 'CHANGELOG.md',
+        changelogFile: 'external-changelog.md', // Fresh per release
       },
     ],
-    // '@semantic-release/npm',
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'CHANGELOG_INTERNAL.md', 'package.json'],
+        assets: ['CHANGELOG.md', 'package.json'],
         message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
       },
     ],
-    '@semantic-release/github',
+    [
+      '@semantic-release/github',
+      {
+        assets: ['external-changelog.md'], // This uploads it to GitHub release
+      },
+    ],
   ],
 };
