@@ -14,7 +14,12 @@ module.exports = {
       './scripts/external-changelog-generator.js',
       {},
     ],
-    '@semantic-release/npm', // ✅ This bumps version in package.json
+    [
+      '@semantic-release/npm',
+      {
+        npmPublish: false, // ✅ Do not publish to npm
+      },
+    ],
     [
       '@semantic-release/git',
       {
