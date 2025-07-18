@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.8.0...v1.9.0) (2025-07-18)
+
+
+### Features
+
+* **login:** support OAuth flow [PROD-123] ([11ba1f1](https://github.com/harshalBhawsar30/semantic-release-test/commit/11ba1f15aadaac78878ac6663841c6dd1771960a))
+
 # [1.8.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.7.0...v1.8.0) (2025-07-18)
 
 
