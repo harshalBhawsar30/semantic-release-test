@@ -2,8 +2,49 @@
 module.exports = {
   branches: ['main'],
   plugins: [
-    '@semantic-release/commit-analyzer',
-    '@semantic-release/release-notes-generator',
+    [
+      '@semantic-release/commit-analyzer',
+      {
+        releaseRules: [
+          { type: 'feat', release: 'minor' },
+          { type: 'fix', release: 'patch' },
+          { type: 'perf', release: 'patch' },
+          { type: 'ux', release: 'patch' },
+          { type: 'deps', release: 'patch' },
+          { type: 'docs', release: false },
+          { type: 'style', release: false },
+          { type: 'breaking', release: 'major' },
+        ],
+        parserOpts: {
+          noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES'],
+        },
+      },
+    ],
+    [
+      '@semantic-release/release-notes-generator',
+      {
+        writerOpts: {
+          groupBy: 'type',
+          commitGroupsSort: 'title',
+          commitGroupsMerge: true,
+          transform: (commit) => {
+            const map = {
+              feat: 'Features',
+              fix: 'Fixes',
+              perf: 'Performance',
+              ux: 'UX Improvements',
+              deps: 'Dependency Updates',
+              breaking: 'Breaking Changes',
+              style: 'Code Style',
+              docs: 'Documentation',
+            };
+            commit.groupTitle = map[commit.type] || commit.type;
+            return commit;
+          },
+          groupTitleFormatter: (group) => group.groupTitle,
+        },
+      },
+    ],
     [
       '@semantic-release/changelog',
       {
@@ -17,7 +58,7 @@ module.exports = {
     [
       '@semantic-release/npm',
       {
-        npmPublish: false, 
+        npmPublish: false,
       },
     ],
     [
