@@ -1,5 +1,5 @@
 # Public Changelog
 
-## 1.2.0
+## 1.3.0
 
-- feat: testing flow
+- feat: testing flow2

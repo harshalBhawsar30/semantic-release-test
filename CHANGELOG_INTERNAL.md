@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.2.0...v1.3.0) (2025-07-18)
+
+
+### Features
+
+* testing flow2 ([3311151](https://github.com/harshalBhawsar30/semantic-release-test/commit/3311151fbba1abc15c5c46daa8e163c4b9317d15))
+
 # [1.2.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.1.0...v1.2.0) (2025-07-18)
 
 
