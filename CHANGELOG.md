@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.4.0...v1.5.0) (2025-07-18)
+
+
+### Features
+
+* Testing flow ([1fc9687](https://github.com/harshalBhawsar30/semantic-release-test/commit/1fc9687e11855616dc2f4e8e200dec8ac981663d))
+
 # [1.4.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.3.0...v1.4.0) (2025-07-18)
 
 
