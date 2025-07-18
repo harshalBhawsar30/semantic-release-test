@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.5.0...v1.6.0) (2025-07-18)
+
+
+### Features
+
+* Testing external changelog ([819c950](https://github.com/harshalBhawsar30/semantic-release-test/commit/819c950518a38eca116a34668c67349b6ac8f7e2))
+
 # [1.5.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.4.0...v1.5.0) (2025-07-18)
 
 
