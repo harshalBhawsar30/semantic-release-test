@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.9.0...v1.10.0) (2025-07-18)
+
+
+### Features
+
+* **install:** installed commitizen, husky and commitlint ([e5e78e8](https://github.com/harshalBhawsar30/semantic-release-test/commit/e5e78e83600132cae34aa448e3aef9be32fdee76))
+* **test:** test ([3fee71b](https://github.com/harshalBhawsar30/semantic-release-test/commit/3fee71be7438e3a46a910426f0db0f79a314210d))
+* **test:** testinggg ([fb5dfbc](https://github.com/harshalBhawsar30/semantic-release-test/commit/fb5dfbcc0c912f71463f871a4e8a47b841340ca2))
+
 # [1.9.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.8.0...v1.9.0) (2025-07-18)
 
 
