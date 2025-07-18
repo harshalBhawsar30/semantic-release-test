@@ -17,7 +17,7 @@ module.exports = {
     [
       '@semantic-release/npm',
       {
-        npmPublish: false, // ✅ Do not publish to npm
+        npmPublish: false, 
       },
     ],
     [
