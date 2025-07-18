@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.10.0...v1.10.1) (2025-07-18)
+
+
+### perf
+
+* testing custom commit type ([](https://github.com/harshalBhawsar30/semantic-release-test/commit/374231ef3be9316b771a26f3d0194916c72a4c9c))
+
 # [1.10.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.9.0...v1.10.0) (2025-07-18)
 
 
