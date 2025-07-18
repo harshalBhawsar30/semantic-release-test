@@ -31,6 +31,6 @@ jobs:
 
       - name: Release with Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SDK_PAT }}
           # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}  # Required if we plan to publish to npm
         run: npx semantic-release
