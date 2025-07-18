@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.7.0...v1.8.0) (2025-07-18)
+
+
+### Features
+
+* Testing version bump in package.json ([401726f](https://github.com/harshalBhawsar30/semantic-release-test/commit/401726f09c4bf2cecf168e62fd1b666d90ed7498))
+* Testing version bump in package.json1 ([5af7787](https://github.com/harshalBhawsar30/semantic-release-test/commit/5af7787b7cec7bb4959aed04a6a469188dc02971))
+
 # [1.7.0](https://github.com/harshalBhawsar30/semantic-release-test/compare/v1.6.0...v1.7.0) (2025-07-18)
 
 
